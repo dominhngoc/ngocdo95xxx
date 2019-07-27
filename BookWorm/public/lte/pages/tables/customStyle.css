@@ -1,0 +1,15 @@
+.edb{
+   
+    
+    margin:0 15px;
+    font-size: 150%;
+}
+.btn-addBook{
+       font-weight: bold;
+            font-size: small;
+            font: 50%;
+            background:#354349;
+            border: 2px solid blue;
+            margin-top:-20px;
+           
+}

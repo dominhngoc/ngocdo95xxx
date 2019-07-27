@@ -1,0 +1,149 @@
+.edb{
+
+
+    margin:0 15px;
+    font-size: 150%;
+}
+/*-------------------button them sach------------------*/
+.btn-addBook{
+            font-weight: bold;
+            font-size: small;
+            background:white;
+            border: 2px solid blue;
+            margin-top:-20px;
+
+}
+.btn-addBook:hover{
+    background:dodgerblue;
+}
+.btn-addBook:hover a{
+    color:white
+}
+
+.btn-edit{
+    color:darkblue;
+}
+
+.alert-success{
+    display: none;
+}
+/*-------------------text area ckeditor----------------*/
+.txtFixed {
+    width: 66.66666667% !important;
+}
+
+/*--------------------upload image fast-----------------*/
+#blah{
+    max-width:230px;
+    height:346px
+}
+#imageUpload{
+    padding:10px;
+    background:none;
+}
+.imageUploadResponsive{
+    position: absolute;
+    right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .imageUploadResponsive{
+        position:static;
+    }
+    #blah{
+        max-width:120px;
+        height:150px
+    }
+
+}
+
+/*--------------------center table-----------------*/
+.example1 tr,th{
+    text-align: center;
+}
+
+/*--------------------status bill-----------------*/
+.statusBill-0{
+    color:rebeccapurple;
+}
+.statusBill-1{
+    color:dodgerblue;
+}
+.statusBill-2{
+    color:green;
+}
+.statusBill-3{
+    color:red;
+}
+
+.shipper{
+    border:solid 2px gray;
+}
+table.infor th,td{
+
+    text-align: left !important;
+}
+
+.billTable th,td{
+    border:1px solid  gray !important;
+
+}
+
+
+caption{
+    color:red !important;
+    font-size: 200%;
+}
+
+
+.infor td{
+    border: none !important;
+}
+.infor span{
+color:blue;
+}
+
+
+.rightConner{
+   border-right: none !important;
+}
+.leftConner{
+    border-left: none !important;
+}
+
+.totalBill{
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.treeview-menu{
+    display: block !important;
+}
+
+.inputCategory{
+    border:none;
+    background: none;
+    font-size: 120%;
+}
+.add-btn{
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 5px 15px;
+
+}
+.del-btn{
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 5px 15px;
+
+}
+
+.edit-btn{
+    display: inline-block;
+    background: orange;
+    color: white;
+    padding: 5px 15px;
+
+}

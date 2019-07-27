@@ -1,0 +1,13 @@
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1270px;
+    }
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.col-lg-3{
+    padding-right: 0 !important;
+}

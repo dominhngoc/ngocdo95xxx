@@ -1,0 +1,8 @@
+.bill-box table{
+width: 100%;
+background: white;
+}
+.bill-box table td{
+    padding: 10px 0 10px 15px;
+    border-bottom:1px solid gray;
+}

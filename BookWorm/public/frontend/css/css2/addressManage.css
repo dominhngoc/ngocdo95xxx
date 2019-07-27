@@ -1,0 +1,118 @@
+.address-box h5{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.address-box #button-default{
+    background: purple;
+    color:white;
+}
+.address-box .button{
+margin: 20px 0 20px 0;
+background: #F3CE70;
+
+font-size: 80%;
+
+padding: 2px 20px;
+
+border-radius: 2px;
+
+border: none;
+}
+.address-box{
+    width: 90%;
+   
+    margin-bottom:20px;
+    padding: 15px;
+    border-radius: 2px;
+    /* height: 200px; */
+}
+.address-box p{
+    font-size: 90%;
+    padding: 2px 0;
+}
+.payment-step img{
+    width: 100%;
+}
+.payment-step div{
+    background: white;
+}
+.payment-step button{
+    padding: 2px 10px;
+    border: 2px solid orange;
+    border-radius: 3px;
+    background: #F26520;
+    margin: 0 15px 15px 30px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.address-add button{
+    width: 100%;
+    background: #F1C860;
+    border: solid 2px white;
+}
+.address-add i{
+display: inline-block;
+border-radius: 100%;
+padding: 5px 6px;
+background: #232F3E;
+color: white;
+}
+.address-add input[type="submit"]{
+    display: inline-block;
+    padding: 2px 10px;
+background: #F3CE70;
+
+}
+.address-add-title{
+    margin-bottom: 20px;
+}
+.address-add h6{
+    display: inline-block;
+padding:10px;
+background:white;
+/* margin-bottom: 20px; */
+border-radius: 10px;
+
+
+}
+.address-add input,.address-box input{
+    display: block;
+    padding-left: 10px;
+    
+}
+.address-add form{
+background: white;
+padding: 5px 50px 5px 10px;
+display: none;
+border-radius: 10px;
+
+}
+.address-box .adress-item{
+    width:100%;
+}
+ .address-box .edit{
+     position: relative;
+    color:black;
+    margin-right: 20px;
+}
+.address-box .edit form{
+    position: absolute;
+z-index: 99;
+background: #71869e;
+top: 30px;
+left: 0;
+color:white;    
+padding: 5px 50px;
+display: none;
+}
+.address-box .edit form input[type="submit"]{
+    display: inline-block;
+    padding: 2px 10px;
+/* background: #F3CE70; */
+color:black;
+}
+.address-box .delete{
+    color:orangered;
+}

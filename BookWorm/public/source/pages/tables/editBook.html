@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Data Tables</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+    
+
+<style>
+#success_message{ display: none;}
+</style>
+
+  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+    
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Admin</b>LTE</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        AdminLTE Design Team
+                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Developers
+                        <small><i class="fa fa-clock-o"></i> Today</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Sales Department
+                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Reviewers
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 10 notifications</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                      page and may cause design problems
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-red"></i> 5 new members joined
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+          <!-- Tasks: style can be found in dropdown.less -->
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-flag-o"></i>
+              <span class="label label-danger">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 9 tasks</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        Design some buttons
+                        <small class="pull-right">20%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        Create a nice theme
+                        <small class="pull-right">40%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">40% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        Some task I need to do
+                        <small class="pull-right">60%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        Make beautiful transitions
+                        <small class="pull-right">80%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">80% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">View all tasks</a>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Alexander Pierce</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MAIN NAVIGATION</li>
+        <li class="active">
+          <a href="../../index.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+         
+        </li>
+       
+     
+        
+        
+       
+        <li class="treeview">
+          <a href="simple.html">
+            <i class="fa fa-table"></i> <span>Quản lý</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="simple.html"><i class="fa fa-circle-o"></i> Tổng hợp</a></li>
+            <li><a href="data.html"><i class="fa fa-circle-o"></i> Quản lý sách</a></li>
+            <li><a href="data.html"><i class="fa fa-circle-o"></i> Quản lý thể loại sách</a></li>
+            <li><a href="data.html"><i class="fa fa-circle-o"></i> Quản lý đơn hàng</a></li>
+            <li><a href="data.html"><i class="fa fa-circle-o"></i> Quản lý sale</a></li>
+          </ul>
+        </li>
+         <li>
+          <a href="../calendar.html">
+            <i class="fa fa-calendar"></i> <span>Calendar</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-red">3</small>
+              <small class="label pull-right bg-blue">17</small>
+            </span>
+          </a>
+        </li>
+      <li class="treeview active">
+          <a href="../mailbox/mailbox.html">
+            <i class="fa fa-envelope"></i> <span>Mailbox</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              <a href="../mailbox/mailbox.html">Inbox
+                <span class="pull-right-container">
+                  <span class="label label-primary pull-right">13</span>
+                </span>
+              </a>
+            </li>
+            <li><a href="../mailbox/compose.html">Compose</a></li>
+            <li class="active"><a href="../mailbox/read-mail.html">Read</a></li>
+          </ul>
+        </li>
+       
+        
+        
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+ 
+<div style="position: relative;" class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend><b>Thêm một cuốn sách tuyệt vời nữa vào kho sách!<b/></legend>
+
+<!-- Text input-->
+<div
+style="
+position: absolute;
+right: 100px;
+width:200px;
+height:300px;
+background:white
+" class="bo">
+<image style="width:200px" src="data:image/jpeg;base64,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"></image>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Book Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
+  <input  name="bookName" placeholder="First Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Author</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="author" placeholder="Last Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">Category Book</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-tags"></i></span>
+  <input name="categoryBook" placeholder="Category Book" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+
+
+<!-- Text input-->
+      
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Language</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
+    <select name="type" class="form-control selectpicker" >
+     
+      <option >Vietnamese</option>
+      <option >English</option>
+    </select>
+  </div>
+</div>
+</div>
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Type</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
+    <select name="type" class="form-control selectpicker" >
+     
+      <option >Ebook</option>
+      <option >PaperBook</option>
+    </select>
+  </div>
+</div>
+</div>
+<!-- Text input-->
+ <div class="form-group">
+  <label class="col-md-4 control-label">Size</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-wrench"></i></span>
+  <input name="size" placeholder="Size" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Weight</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-record"></i></span>
+  <input name="weight" placeholder="Weight" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+
+
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Buy Price</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-log-in"></i></span>
+  <input name="buyPrice" placeholder="0.00" class="form-control"  type="text">
+    </div>
+</div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Sell Price</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-log-out"></i></span>
+  <input name="sellPrice" placeholder="0.00" class="form-control"  type="text">
+    </div>
+</div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Sale Price</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-flash"></i></span>
+  <input name="salePrice" placeholder="0.00" class="form-control"  type="text">
+    </div>
+</div>
+</div>
+
+<!-- Text input-->
+
+
+<!-- radio checks -->
+
+                       
+
+<!-- Text area -->
+  
+<div class="form-group">
+  <label class="col-md-4 control-label">Project Description</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Edit <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 2.4.0
+    </div>
+    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+    reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading">Recent Activity</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                <p>Will be 23 on April 24th</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-user bg-yellow"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+
+                <p>New phone +1(800)555-1234</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+
+                <p>nora@example.com</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+
+                <p>Execution time 5 seconds</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+        <h3 class="control-sidebar-heading">Tasks Progress</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Custom Template Design
+                <span class="label label-danger pull-right">70%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Update Resume
+                <span class="label label-success pull-right">95%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Laravel Integration
+                <span class="label label-warning pull-right">50%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Back End Framework
+                <span class="label label-primary pull-right">68%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Stats tab content -->
+      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+        <form method="post">
+          <h3 class="control-sidebar-heading">General Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Report panel usage
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Some information about this general settings option
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Allow mail redirect
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Other sets of options are available
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Expose author name in posts
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Allow the user to show his name in blog posts
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <h3 class="control-sidebar-heading">Chat Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Show me as online
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Turn off notifications
+              <input type="checkbox" class="pull-right">
+            </label>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Delete chat history
+              <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+            </label>
+          </div>
+          <!-- /.form-group -->
+        </form>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+</body>
+</html>

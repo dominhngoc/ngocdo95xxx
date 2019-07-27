@@ -1,0 +1,303 @@
+
+@media only screen and (max-width: 1232px) {
+    header nav .search .search-fill input{
+        width: 50%;
+    }
+    header nav  li {
+       
+        /* list-style: none; */
+        margin-left: 10px;
+        font-size:80%;
+    }
+    header .search{
+        width: 300px;
+    }
+    header .search .search-fill{
+        width: 300px;
+    }
+    .container {
+        max-width: 1100px;
+    }
+    
+    
+}
+@media only screen and (max-width: 982px) {
+    .container {
+        max-width: 920px;
+    }
+    .menu-nav{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }.category{
+        display: none;
+    }
+    .main-center{
+        width: 100%;
+       
+    }
+    header .search{
+        width: 500px;
+        padding-top: 5px;
+       
+    }
+    header .search .search-fill{
+        width: 500px;
+       
+        
+    } header nav .search .search-fill input{
+        /* border-radius: 15px; */
+     
+        width: 360px;
+        
+    } .details .promotion {
+        display: none;
+    }
+    .item-quantity button {
+        margin-top:5px;
+    }.payment-step {
+        display: none;
+     }
+     .manage .account-main input[type="text"] {
+        margin-left: 10px;
+        width: 250px;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    .check-out .bill-total {
+       display: none;
+    }
+    .details .slide-container {
+        width: 30000px;
+        transition: transform 0.5s;
+    
+    }
+    .details .slide-container .book-item {
+
+        width: 42vw !important;
+     
+     }
+   .section-form .container{
+        width: 90%;
+    }
+    header .search{
+        width: 300px;
+        padding-top: 5px;
+       
+    }
+    header .search .search-fill{
+        width: 300px;
+       
+        
+    } header nav .search .search-fill input{
+        /* border-radius: 15px; */
+     
+        width: 180px;
+        
+    }
+   
+   
+.details .description p {
+
+  
+    height: 300px;
+    overflow: scroll;
+
+}
+.details .image-book img {
+    width: 150px;
+    height: 220px;
+}  .manage .account-menu li {
+    border: 1px solid black;     
+    padding-left: 5px;
+    float: left;
+    width: 25%;
+    height: 90px;
+}
+.account-menu .category-name{
+    display: block;
+}
+.manage .account-menu {
+    background: none;
+ 
+    
+    min-height: 120px;
+    /* text-align: center; */
+}
+.manage .account-menu li{
+   
+    
+    float:left;
+    width: 100px;
+}
+.manage .account-menu li i {
+    padding:0;
+}
+
+.manage .account-main input[type="text"] {
+    margin-left: 10px;
+    width: 350px;
+}
+footer p{
+    font-size: 80%;
+}
+
+}
+@media only screen and (max-width: 576px) {
+    .manage .account-main input[type="text"] {
+        margin-left: 10px;
+        width: 250px;
+    }
+    
+    
+    .details .book-details .box-1 img {
+        width: 100px;
+        height: 160px;
+    }
+        .details .slide-container .book-item {
+
+            width: 85vw !important;
+         
+         }
+         .item-quantity button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border: solid 1px black;
+        }
+        .item-quantity-col-2 {
+            margin-left:-5%;
+        }
+        .item-quantity button {
+            margin-top:0px;
+        }
+      
+}
+@media only screen and (max-width: 468px) {
+    *{
+        font-size:15px;
+    }
+    
+    header nav .logo{
+        width: 80px;
+        height: 70px;
+    }
+    header nav .account {
+        margin-left: 10px;
+        margin-top: 10px;
+    } 
+    header .search{
+        width: 200px;
+       
+    }
+    header .search .search-fill{
+        width: 200px;
+        margin-top: -15px;
+        
+    }
+   
+    header nav .search .search-left{
+        display: none;
+        width: 30px;
+   
+    }
+    header nav .search .search-left select{
+    
+        width: 30px;
+    
+    }
+    
+    header nav .search .search-fill input{
+        /* border-radius: 15px; */
+     
+        width: 140px;
+        
+    }
+    header nav .search .search-button{
+        width: 37px;
+       
+    }
+
+    header nav li{
+        margin: 0 15px;
+    }
+   
+    .Banner .container {
+       width: 100vw;
+        
+    }
+    .Banner img{
+        padding:0;
+        height: 150px;
+    }
+    .main-header{
+       
+    }
+    h3{
+        font-size: 90%;   
+    }
+    h6{
+        font-size: 100%;   
+    }
+    .main-header h5{
+        font-size: 80%;   
+        font-weight: bold;
+    }
+    .main-header ul li{
+        margin-right:3px;
+    }
+    .section-form .container{
+        width: 90%;
+    }
+    
+
+.creative img{
+    width: 50%;
+    min-width: 0;
+    height:200px;
+}
+.wordart .text{
+   font-size:120%;  
+}
+/* responsive details page */
+
+
+.details .book-details .image-book img{
+    width: 100px;
+    height: 160px;
+}
+.details .book-details .btn-download{
+    margin: 0;
+    padding: 0;
+}
+.details .promotion img {
+
+   display: none;
+
+}
+.details .book-related {
+
+   
+    margin-top: 30px;
+
+}
+
+.item-body .item-img img {
+    width: 80px;
+    height: 120px;
+}
+.item-quantity-col-2 {
+    margin-left:-3%;
+}
+.item-head h5{
+    font-size:120%
+}
+.address-box .edit form {
+    padding: 5px 20px;
+}.manage .account-main input[type="text"] {
+    margin-left: 10px;
+    width: 150px;
+}
+
+
+}

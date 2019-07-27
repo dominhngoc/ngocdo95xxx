@@ -1,0 +1,168 @@
+@media only screen and (max-width: 1232px) {
+    header nav .search .search-fill input{
+        width: 50%;
+    }
+    header nav  li {
+       
+        /* list-style: none; */
+        margin-left: 10px;
+        font-size:80%;
+    }
+    header .search{
+        width: 300px;
+    }
+    header .search .search-fill{
+        width: 300px;
+    }
+    
+    
+}
+@media only screen and (max-width: 982px) {
+    .menu-nav{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }.category{
+        display: none;
+    }
+    .main-center{
+        width: 100%;
+       
+    }
+    header .search{
+        width: 500px;
+        padding-top: 5px;
+       
+    }
+    header .search .search-fill{
+        width: 500px;
+       
+        
+    } header nav .search .search-fill input{
+        /* border-radius: 15px; */
+     
+        width: 360px;
+        
+    }
+
+}
+@media only screen and (max-width: 767px) {
+   .section-form .container{
+        width: 90%;
+    }
+    header .search{
+        width: 300px;
+        padding-top: 5px;
+       
+    }
+    header .search .search-fill{
+        width: 300px;
+       
+        
+    } header nav .search .search-fill input{
+        /* border-radius: 15px; */
+     
+        width: 180px;
+        
+    }
+   
+}
+@media only screen and (max-width: 468px) {
+    *{
+        font-size:15px;
+    }
+    header nav .logo{
+        width: 80px;
+        height: 70px;
+    }
+    header nav .account {
+        margin-left: 10px;
+        margin-top: 10px;
+    } 
+    header .search{
+        width: 200px;
+       
+    }
+    header .search .search-fill{
+        width: 200px;
+        margin-top: -15px;
+        
+    }
+   
+    header nav .search .search-left{
+        display: none;
+        width: 30px;
+   
+    }
+    header nav .search .search-left select{
+    
+        width: 30px;
+    
+    }
+    
+    header nav .search .search-fill input{
+        /* border-radius: 15px; */
+     
+        width: 140px;
+        
+    }
+    header nav .search .search-button{
+        width: 37px;
+       
+    }
+
+    header nav li{
+        margin: 0 15px;
+    }
+   
+    .Banner .container {
+       width: 100vw;
+        
+    }
+    .Banner img{
+        padding:0;
+        height: 150px;
+    }
+    .main-header{
+       
+    }
+    h3{
+        font-size: 90%;   
+    }
+    h6{
+        font-size: 100%;   
+    }
+    h5{
+        font-size: 80%;   
+        font-weight: bold;
+    }
+    .main-header ul li{
+        margin-right:3px;
+    }
+    .section-form .container{
+        width: 90%;
+    }
+    
+
+.creative img{
+    width: 50%;
+    min-width: 0;
+    height:200px;
+}
+.wordart .text{
+   font-size:120%;  
+}
+
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }

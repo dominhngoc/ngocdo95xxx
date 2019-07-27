@@ -1,0 +1,95 @@
+.manage{
+    color:black;
+    /* font-size:22px; */
+    margin-bottom:50px;
+}
+.manage table{
+    border-collapse: initial;
+}
+.manage h5{
+   margin-bottom: 20px;
+
+}
+.manage a{
+    font-family: Poppins-Regular;
+	font-size: 18px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}.manage a:hover{
+    text-decoration: none;
+}
+.manage .account-link {
+    margin:5px 0;
+}
+.manage .account-link li{
+    float:left;
+    margin-left:5px;
+   
+}
+.manage .account-link li a{
+    font-size: 100%;
+}
+.manage .account-link li i{
+    margin-top:6px;
+}
+.manage .account-menu{
+    background: white;
+    border-radius:5px;
+    padding-top:20px;
+    min-height: 400px;
+    /* text-align: center */
+}
+.manage .account-menu li:hover{
+    background: #687A91;
+}
+.manage .account-main input{
+    margin-left:10px;
+}
+.manage .account-main input[type="text"]{
+  
+    width:450px ;
+}
+.account-actived{
+    background: #687A91;
+}
+.manage .account-menu li.account-actived a{
+    color:white;
+}
+.manage .account-menu li:hover a{
+    color:white;
+}
+.manage .account-menu li i{
+    padding:10px;
+}
+
+
+.account-box td{
+    padding:0 10px;
+}
+.account-box input[type="text"]{
+margin:10px 0;
+width: 400px;
+border: 5px;
+}
+    .account-main select{
+   
+    width: 65px;
+    margin-left:10px;
+}
+.manage #account-update{
+    padding: 5px 10px;
+background: #E67E22;
+border-radius: 5px;
+color: white;
+margin-top:20px;
+}
+.address-box {
+    /* padding-top: 30px; */
+    background: white;
+    padding: 20px 10px;
+}
